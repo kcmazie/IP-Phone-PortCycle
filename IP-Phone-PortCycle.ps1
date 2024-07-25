@@ -219,7 +219,7 @@ ForEach ($Line in $IPList | Where-Object {$_ -NotLike "#"}){
                     If ($ExtOption.Debug){
                         StatusMsg "--[ $Command ]--" "Cyan" $ExtOption
                     }Else{
-                        $SSHStream.WriteLine(('{0}' -f $Command))
+                        $Stream.WriteLine(('{0}' -f $Command))
                     }
                     Start-Sleep -Milliseconds 200
                 }
